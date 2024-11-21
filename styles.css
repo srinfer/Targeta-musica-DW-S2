@@ -1,0 +1,149 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.spotify-card {
+    background-color: #333333;
+    color: #fff;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    width: 70%;
+}
+
+.info-section h3 {
+    margin: 0 0 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+}
+
+.info-section p {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.image-section {
+    width: 25%;
+    margin-left: 10px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 10px solid #fff;
+    margin-left: -60px;
+    /* Ajusta este valor para mover la imagen más a la izquierda */
+    margin-top: 10px;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.timeline span {
+    color: #999;
+    font-size: 0.9em;
+    margin: 0 10px;
+}
+
+.timeline input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background: #999;
+    outline: none;
+    cursor: pointer;
+}
+
+.timeline input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.timeline input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.controls i {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.controls i:hover {
+    color: #1DB954;
+    /* Color verde de Spotify */
+}
+
+.controls .play {
+    font-size: 2.5em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+.footer .spotify-logo {
+    color: #1DB954;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer .date {
+    font-size: 0.9em;
+    color: #999;
+}
